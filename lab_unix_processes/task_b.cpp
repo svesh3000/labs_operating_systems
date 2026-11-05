@@ -40,6 +40,5 @@ int main()
   for (size_t i = 0; i < MAXTHREADS; i++)
   {
     pthread_join(tid_produce[i], NULL);
-    printf("count[%zu]=%d\n", i, count[i]);
   }
 }
